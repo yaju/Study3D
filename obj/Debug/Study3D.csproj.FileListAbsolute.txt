@@ -1,0 +1,12 @@
+C:\Project\Study3D\Study3D\Study3D\bin\Study3D.dll.config
+C:\Project\Study3D\Study3D\Study3D\bin\Study3D.dll
+C:\Project\Study3D\Study3D\Study3D\bin\Study3D.pdb
+C:\Project\Study3D\Study3D\Study3D\obj\Debug\Study3D.dll
+C:\Project\Study3D\Study3D\Study3D\obj\Debug\Study3D.pdb
+C:\Project\Study3D\Study3D\Study3D\obj\Debug\Study3D.csprojResolveAssemblyReference.cache
+C:\Project\Study3D\bin\Study3D.dll.config
+C:\Project\Study3D\bin\Study3D.dll
+C:\Project\Study3D\bin\Study3D.pdb
+C:\Project\Study3D\obj\Debug\Study3D.csprojResolveAssemblyReference.cache
+C:\Project\Study3D\obj\Debug\Study3D.dll
+C:\Project\Study3D\obj\Debug\Study3D.pdb
