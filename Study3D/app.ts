@@ -170,6 +170,26 @@ class Study3DApp {
         });
     }
 
+    //３点が時計回りかどうかを調べる
+    //時計回りなら１，反時計回りで-1、直線で０を返す。
+    isFace(p1: Point, p2: Point, p3: Point) {
+        var result: number = 0;
+        var dx2: number;
+        var dy2: number;
+        var dx3: number;
+        var dy3: number;
+
+        dx2 = p2.x - p1.x;
+        dy2 = p2.y - p1.y;
+        dx3 = p3.x - p1.x;
+        dy3 = p3.y - p1.y;
+
+        if ((dx2 * dy3) > (dx3 * dy2)) result = -1;
+        else if ((dx2 * dy3) < (dx3 * dy2)) result = 1;
+
+        return result;
+    }
+
     // モデル描画
 	drawModel() {
         var g: CanvasRenderingContext2D = this.context;
@@ -201,6 +221,10 @@ class Study3DApp {
             g.fillStyle = 'rgb(' + hsb.r + ',' + hsb.g + ',' + hsb.b + ')';
             // 面の塗りつぶし
             g.fill();
+
+            g.fillStyle = "black";
+            g.fillText('theta = ' + this.theta, 10, 10)
+            g.fillText('phi = ' + this.phi, 10, 20)
         }
     }
 

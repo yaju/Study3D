@@ -166,6 +166,28 @@ var Study3DApp = (function () {
         });
     };
 
+    //３点が時計回りかどうかを調べる
+    //時計回りなら１，反時計回りで-1、直線で０を返す。
+    Study3DApp.prototype.isFace = function (p1, p2, p3) {
+        var result = 0;
+        var dx2;
+        var dy2;
+        var dx3;
+        var dy3;
+
+        dx2 = p2.x - p1.x;
+        dy2 = p2.y - p1.y;
+        dx3 = p3.x - p1.x;
+        dy3 = p3.y - p1.y;
+
+        if ((dx2 * dy3) > (dx3 * dy2))
+            result = -1;
+        else if ((dx2 * dy3) < (dx3 * dy2))
+            result = 1;
+
+        return result;
+    };
+
     // モデル描画
     Study3DApp.prototype.drawModel = function () {
         var g = this.context;
@@ -197,6 +219,10 @@ var Study3DApp = (function () {
 
             // 面の塗りつぶし
             g.fill();
+
+            g.fillStyle = "black";
+            g.fillText('theta = ' + this.theta, 10, 10);
+            g.fillText('phi = ' + this.phi, 10, 20);
         }
     };
 
