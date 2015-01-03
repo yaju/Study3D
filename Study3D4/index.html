@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html lang="ja" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>3D入門 3Dモデルのアニメーション</title>
+    <link rel="stylesheet" href="app.css" type="text/css" />
+</head>
+<body>
+    <div id="controler">
+        WireFrame: <input type="checkbox" id="wireFrameCheck" checked="checked" />&nbsp;|&nbsp;
+        Fill: <input type="checkbox" id="fillCheck" checked="checked" />&nbsp;|&nbsp;
+        Colorful: <input type="checkbox" id="colorfulCheck" checked="checked" />&nbsp;|&nbsp;
+        Culling: <input type="checkbox" id="cullingCheck" checked="checked" />&nbsp;|&nbsp;
+        Axis: <input type="checkbox" id="axisCheck" checked="checked" />&nbsp;|&nbsp;
+        Axis Cube: <input type="checkbox" id="axisCubeCheck" checked="checked" /><br />
+        horse: <input type="radio" name="models" value="horse" checked="checked" />&nbsp;|&nbsp;
+        flamingo: <input type="radio" name="models" value="flamingo" />&nbsp;|&nbsp;
+        stork: <input type="radio" name="models" value="stork" />&nbsp;|&nbsp;
+        parrot: <input type="radio" name="models" value="parrot" /><br />
+        <span id="info">theta = 0 / phi = 0</span><br />
+        speed: <input type="range" value="5" min="0" max="10" id="speed" ui="Slider"/>&nbsp;<span id="speedDisp">5</span>
+    </div>
+    <canvas id="content"></canvas><br />
+    <script src="app.js"></script>
+</body>
+</html>
